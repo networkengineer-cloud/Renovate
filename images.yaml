@@ -1,2 +1,4 @@
 # renovate: datasource=docker packageName=docker versioning=docker
-kong/kuma-cp:2.8.2
+images:
+  - name: kong/kuma-cp
+    version: 2.8.2
