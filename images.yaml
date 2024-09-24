@@ -1,2 +1,2 @@
+# renovate: datasource=docker depName=kong/kuma-cp
 kong/kuma-cp:2.8.2
-    
