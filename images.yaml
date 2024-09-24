@@ -1,1 +1,3 @@
 kong/kuma-cp:2.8.2
+kong/kuma-dp:2.8.2
+kong/kuma-init:2.8.2
