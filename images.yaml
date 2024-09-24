@@ -1,1 +1,2 @@
-image=kong/kuma-cp appVersion: "2.8.2"
+image: kong/kuma-cp
+appVersion: "2.8.2"
