@@ -1,2 +1,2 @@
-# renovate: datasource=docker versioning=semver
+# renovate: datasource=docker packageName=docker versioning=docker
 kong/kuma-cp:2.8.2
