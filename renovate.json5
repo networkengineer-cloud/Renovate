@@ -6,7 +6,7 @@
     {
       "fileMatch": ["images.yaml"],
       "matchStrings": [
-        "^(?<depName>[\\w-]+/[\\w-]+):(?<currentValue>\\d+\\.\\d+\\.\\d+)$"
+        "(?<depName>[\\w-]+/[\\w-]+):(?<currentValue>\\d+\\.\\d+\\.\\d+)"
       ],
       "datasourceTemplate": "docker",
       "versioningTemplate": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)$"
