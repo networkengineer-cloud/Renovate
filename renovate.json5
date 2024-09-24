@@ -1,16 +1,22 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:recommended"
+    "config:base"
   ],
-  "customManagers": [
+  "regexManagers": [
     {
-      "customType": "regex",
-      "datasourceTemplate": "docker",
-      "fileMatch": ["(^|/)images\\.yaml$"],
+      "fileMatch": ["images.yaml"],
       "matchStrings": [
-        "#\\s?renovate: image=(?<depName>.*?)\\s?appVersion:\\s?\\\"?(?<currentValue>[\\w+\\.\\-]*)\""
-      ]
+        "^(?<depName>[\\w-]+/[\\w-]+):(?<currentValue>\\d+\\.\\d+\\.\\d+)$"
+      ],
+      "datasourceTemplate": "docker",
+      "versioningTemplate": "docker"
     }
   ],
+  "packageRules": [
+    {
+      "matchDatasources": ["docker"],
+      "versioning": "regex:^(\\d+\\.\\d+\\.\\d+)$"
+    }
+  ]
 }
+
