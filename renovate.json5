@@ -15,7 +15,6 @@
       ],
       versioningTemplate: '{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}',
       datasourceTemplate: "docker"
-      depNameTemplate: docker
     },
   ],
   "packageRules": [
