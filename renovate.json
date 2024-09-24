@@ -3,6 +3,9 @@
   "extends": [
     "config:recommended"
   ],
+  "kubernetes": {
+    "fileMatch": ["\\.yaml$"]
+  },
   "packageRules": [
     {
       "enabled": true,
