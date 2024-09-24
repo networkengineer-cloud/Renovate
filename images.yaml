@@ -1,2 +1,2 @@
-# renovate: datasource=docker depName=kong/kuma-cp
-kong/kuma-cp:2.8.2
+# renovate: datasource=github-tags depName=org/repo versioning=loose
+something:4.7.2    something-else:4.7.2
