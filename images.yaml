@@ -1,2 +1,21 @@
+<<<<<<< Updated upstream
 images:
   kong/kuma-cp:2.8.2
+=======
+kong/kuma-cp:2.8.2
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: tmp-shell
+  name: tmp-shell
+spec:
+  containers:
+  - image: kong/kuma-cp:2.8.2
+    name: tmp-shell
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}
+>>>>>>> Stashed changes
