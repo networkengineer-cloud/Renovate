@@ -1,4 +1,4 @@
 kong/kuma-cp:2.8.2
-kong/kuma-dp:2.8.2
+kong/kuma-dp:2.9.0
 kong/kuma-init:2.8.2
 cloudflare/cloudflared:2024.9.1
